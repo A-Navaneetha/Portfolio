@@ -10,7 +10,7 @@ A modern and responsive portfolio website built using **React.js** to showcase m
 ## 🚀 Live Demo
 
 🌐 Portfolio Website:
-https://your-portfolio-url.netlify.app
+https://navaneetha-personalportfolio.netlify.app/
 
 ## 📖 About The Project
 

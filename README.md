@@ -1,14 +1,16 @@
 # 🌐 Personal Portfolio Website
 
+![React](https://img.shields.io/badge/React-18-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Netlify](https://img.shields.io/badge/Deployed-Netlify-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 A modern and responsive portfolio website built using **React.js** to showcase my skills, projects, achievements, and contact information.
 
 ## 🚀 Live Demo
 
-🔗 Add your deployed website link here
-
-```text
-https://navaneetha-personalportfolio.netlify.app/
-```
+🌐 Portfolio Website:
+https://your-portfolio-url.netlify.app
 
 ## 📖 About The Project
 

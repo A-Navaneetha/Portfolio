@@ -1,0 +1,242 @@
+/* Footer Styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(15, 15, 20, 0.92) 0%, rgba(15, 15, 20, 0.98) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 999;
+  overflow: hidden;
+}
+
+/* Glow effect */
+.footer-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 100%, rgba(99, 102, 241, 0.06) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Decorative top line */
+.footer-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.decoration-line {
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(99, 102, 241, 0.3) 20%, 
+    var(--primary-color) 50%, 
+    rgba(99, 102, 241, 0.3) 80%, 
+    transparent 100%
+  );
+  opacity: 0.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Brand */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.footer-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.footer-role {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Copyright */
+.footer-copyright {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Tagline */
+.footer-tagline {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.footer-credit {
+  color: var(--text-light);
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.heart {
+  display: inline-block;
+  animation: heartbeat 1.5s ease-in-out infinite;
+  margin: 0 2px;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* Social Links with enhanced effects */
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Background animation */
+.social-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #818cf8 100%);
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+}
+
+.social-link:hover .social-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.social-link:hover {
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+.social-icon {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  color: white;
+}
+
+/* Icon bounce on hover */
+.social-link:hover .social-icon {
+  animation: iconBounce 0.4s ease;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    max-width: calc(100% - 240px);
+    margin-left: 240px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 24px 0;
+  }
+
+  .footer-container {
+    max-width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .footer-section {
+    flex: none;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer-center {
+    order: -1;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
+}

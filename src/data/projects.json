@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "description": "Responsive personal portfolio showcasing projects, skills, and professional experience with modern UI/UX design.",
+    "techStack": ["React.js", "CSS", "HTML5", "JavaScript"],
+    "icon": "FaImagePortrait"
+  },
+  {
+    "title": "Scientific Calculator Web Application",
+    "description": "Built a fully responsive scientific calculator using React, optimized for mobile, tablet, and desktop with touch-friendly UI and adaptive layouts.",
+    "techStack": ["React.js", "JavaScript", "CSS", "Math.js"],
+    "icon": "FaCalculator"
+  },
+  {
+    "title": "ATM Simulation System",
+    "description": "Console-Based application allows users to perform basic banking operations such as depositing money, withdrawing funds, and checking account balance through a menu-driven interface",
+    "techStack": ["Java", "OOPs Concepts"],
+    "icon": "MdAtm"
+  },
+  {
+    "title": "Ship Reservation System",
+    "description": "Developed a full-stack Ship Reservation System using React.js, Spring Boot, and MySQL, allowing users to book ship tickets, manage reservations, and view travel details through a responsive and user-friendly interface.",
+    "techStack": ["React.js", "SpringBoot", "MySQL"],
+    "icon": "GiShipBow"
+  },
+  {
+    "title": "Library Management System",
+    "description": "Built a Library Management System in Java to streamline book management operations, including adding books, searching records, issuing books, and returning books through a user-friendly console interface.",
+    "techStack":  ["Java", "OOPs Concepts"],
+"icon": "IoLibrary"
+  }
+]
+
+

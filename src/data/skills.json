@@ -1,0 +1,8 @@
+{
+  "languages": [ "Java", "Python", "JavaScript"],
+  "ml": ["Pandas", "NumPy", "Scikit-learn", "Keras"],
+  "frontend": ["React", "HTML5", "CSS"],
+  "backend": ["Node.js", "Spring Boot"],
+  "databases": ["MySQL", "MongoDB"],
+  "tools": [ "Jupyter", "VS Code", "Eclipse"]
+}
